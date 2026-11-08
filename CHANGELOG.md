@@ -1,5 +1,12 @@
 # Publication changes
 
+## Prompt workflow and safer testing — 8 November 2026
+
+- Documented four test prompts and a fifth compilation prompt from the analyst’s supplied file.
+- Added VirtualBox/isolated-environment guidance and distinguished it from the original live-desktop setup.
+- Explained why prompt assumptions and requested checks must not be treated as findings.
+- Added no new security-test results.
+
 ## Analysis attribution correction — 8 November 2026
 
 - Removed unrelated framing and corrected the first-person analysis attribution.

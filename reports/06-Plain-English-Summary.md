@@ -25,6 +25,16 @@ This is my account of the setup I used; the collection records do not independen
 
 The work examined parts of the program’s code and file structure, then watched selected behavior while it ran. It was not a complete professional reverse-engineering audit or a reconstruction of every function using tools such as Ghidra or IDA.
 
+## How were the tests requested?
+
+I used **four prompts, one for each of the four investigations**, then a fifth prompt to combine their reports. A prompt is a set of instructions for the assistant, not proof that a test worked or that an assumption was true. Some requested checks could not be completed. See the [prompt-to-report guide](../docs/PROMPTS-AND-SAFE-TESTING.md).
+
+## If you want to try this yourself
+
+**Use VirtualBox or another properly isolated test environment for LuaTools or other unfamiliar files. Do not use your everyday PC or personal accounts.** Keep personal files out, disable sharing with your real computer, and restrict network access. A virtual machine is not a guarantee of safety, and software may behave differently inside it, especially when graphics hardware is involved.
+
+The original tests used a live desktop, so this is advice for future testing, not a claim about the original setup. Read the [safer testing guidance](../docs/PROMPTS-AND-SAFE-TESTING.md#before-trying-this-yourself) before running anything.
+
 ## What was actually found?
 
 ### 1. Code can share Steam content keys without encryption

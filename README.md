@@ -28,6 +28,12 @@ This repository explains the evidence behind that assessment, including negative
 | Analysis | AI-assisted PowerShell/Python/.NET metadata inspection and Windows API/counter measurements |
 | Public evidence | Five redacted reports, a plain-English summary and a software-hash inventory; no raw forensic logs or binaries |
 
+## For anyone repeating this analysis
+
+**Use VirtualBox or another properly isolated test environment for LuaTools or other unfamiliar files, rather than your everyday PC.** Keep personal files and accounts out of it. A VM is not a safety guarantee, and its settings and network access matter. The original tests used a live desktop; this recommendation does not describe how those tests were run.
+
+I used **four test prompts, one per investigation, plus a fifth prompt to compile the master report**. See [the prompt-to-report guide and safer testing advice](docs/PROMPTS-AND-SAFE-TESTING.md) for the workflow, precautions and limitations.
+
 ## Start here
 
 - **New to security analysis?** Start with the [plain-English summary](reports/06-Plain-English-Summary.md).

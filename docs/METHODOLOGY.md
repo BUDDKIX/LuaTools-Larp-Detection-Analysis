@@ -19,3 +19,9 @@ CPU utilization was calculated from CPU-time deltas divided by wall time and the
 Automation used PowerShell, Python/pefile, 7-Zip, a custom .NET metadata reader and Windows APIs/counters. No VirusTotal upload was used. Public project documentation and registration records were consulted where documented. I did the analysis using **ChatGPT Codex with the GPT-6 Astra model**, with **medium-to-high reasoning effort** and **full access to my PC**.
 
 This is my account of the setup I used; the collection records do not independently verify the model or reasoning settings. Full access refers to Codex’s access permissions, not Windows administrator privileges: the recorded tests ran without elevation, and some tracing was unavailable. No independent professional validation is claimed.
+
+## Prompt workflow and future testing
+
+The analyst supplied four test prompts, one per investigation, followed by a fifth master-report compilation prompt. These specify requested work, not proof that every check completed. See [the prompt-to-report guide](PROMPTS-AND-SAFE-TESTING.md).
+
+For repeat testing of LuaTools or other unfamiliar programs, use VirtualBox or another properly isolated environment, with personal data excluded and host sharing/networking restricted. The original live-desktop setup is not recommended as a template for handling unknown files. Virtualization can affect behavior and GPU measurements; see the [safer testing guidance](PROMPTS-AND-SAFE-TESTING.md#before-trying-this-yourself).
