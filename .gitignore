@@ -1,0 +1,14 @@
+# Private collection data must never be committed here.
+work/
+private/
+raw-evidence/
+*.exe
+*.dll
+*.dmp
+*.etl
+*.pcap
+*.pcapng
+*.pml
+*.zip
+.DS_Store
+Thumbs.db
