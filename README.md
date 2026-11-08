@@ -52,6 +52,12 @@ I used **four test prompts, one per investigation, plus a fifth prompt to compil
 | [05 — Master report](reports/05-Master-Security-Investigation-Report.md) | What do the results mean together? | Riskware, with specific confirmed concerns and material testing gaps |
 | [06 — Plain-English summary](reports/06-Plain-English-Summary.md) | What does this mean without the technical detail? | An accessible explanation of the master report, with the same uncertainties |
 
+## How to read this report
+
+**T1–T4** refer to the four individual test reports. **§** means a section or step, and **§§** means several: **T3 §§1–2, 8** means “Test 3, Steps 1, 2 and 8.” A semicolon separates references. These show where a claim’s evidence comes from.
+
+See the [reading guide and clickable report key](reports/05-Master-Security-Investigation-Report.md#how-to-read-this-report) for examples, finding labels and privacy placeholders. “Not observed” does not mean “impossible,” and a risk rating is not proof of malware.
+
 ## What the analysis covered
 
 The work included PE/import/export analysis, string inspection, installer and .NET bundle extraction, and inspection of managed intermediate language (IL). It also included live process/module, resource, network, filesystem and memory-region observations.

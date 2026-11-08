@@ -1,5 +1,9 @@
 # LuaTools investigation: the plain-English summary
 
+## How to read this report
+
+Read each finding together with its limitations. For **T1–T4**, **§/§§**, source references and finding labels, use the [short reading guide](05-Master-Security-Investigation-Report.md#how-to-read-this-report). “Not observed” is not a guarantee of safety.
+
 [Back to the README](../README.md) · [Full master report](05-Master-Security-Investigation-Report.md)
 
 **Published: 8 November 2026. Based on tests from 6 November 2026.** This explains the master report in simpler language. It adds no new tests or evidence.

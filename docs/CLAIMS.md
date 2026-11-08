@@ -2,6 +2,12 @@
 
 [Overview](../README.md)
 
+## How to read this report
+
+The **Source** column points to evidence in the individual test reports: **T1** = static analysis, **T2** = mining, **T3** = credentials/networking, **T4** = persistence/injection. **§** means one step; **§§** means multiple steps. For example, **T3 §§1–2, 8** means Test 3, Steps 1, 2 and 8. A semicolon separates references, and a dash indicates an inclusive range.
+
+Use the [clickable report key and full reading guide](../reports/05-Master-Security-Investigation-Report.md#how-to-read-this-report) to find each report. The “Avoid saying” column contains unsupported wording, not conclusions of this investigation.
+
 | Evidence-supported wording | Source | Avoid saying |
 |---|---|---|
 | “We inspected managed IL and tested observable behavior.” | T1 §4; T2–T4 | “We fully reconstructed every native DLL.” |

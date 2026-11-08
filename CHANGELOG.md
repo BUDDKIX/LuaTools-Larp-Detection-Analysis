@@ -1,5 +1,11 @@
 # Publication changes
 
+## Reading guide — 8 November 2026
+
+- Added explanations of report references, section symbols, ranges, finding labels and privacy placeholders.
+- Linked the reading guide from the README, claim table and individual reports.
+- No findings or measurements changed.
+
 ## Prompt workflow and safer testing — 8 November 2026
 
 - Documented four test prompts and a fifth compilation prompt from the analyst’s supplied file.

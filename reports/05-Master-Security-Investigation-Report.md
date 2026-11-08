@@ -23,6 +23,26 @@ Evidence convention: **T1** = Static Malware Analysis (9 steps); **T2** = GPU Mi
 
 **Prompt workflow:** Four test prompts were used, one per investigation, followed by a fifth compilation prompt. Requested steps are not evidence of completed checks. For future analysis of LuaTools or other unfamiliar files, use VirtualBox or another properly isolated environment rather than an everyday PC. This was not the original test environment. See [prompts and safer testing](../docs/PROMPTS-AND-SAFE-TESTING.md).
 
+## How to read this report
+
+Start with the conclusion, then check its limitations. The **Source** column and references in square brackets tell you where the supporting evidence was reported; they are not extra findings.
+
+| Reference | Report to open |
+|---|---|
+| **T1** | [Static malware analysis](01-Static-Malware-Analysis.md) |
+| **T2** | [Mining investigation](02-GPU-Miner-Detection.md) |
+| **T3** | [Credentials and network analysis](03-Credential-Theft-and-Network-Analysis.md) |
+| **T4** | [Persistence and injection analysis](04-Trojan-and-Persistence-Analysis.md) |
+
+- **§** means a section or numbered step; **§§** means several. In references to T1–T4, look for the numbered test steps in the linked report.
+- **T1 §4** means “Test 1, Step 4.” **T3 §§1–2, 8** means “Test 3, Steps 1, 2 and 8.”
+- A dash gives an inclusive range: **T2–T4** means Tests 2, 3 and 4. A semicolon separates references: **T3 §6; T4 §7** means Test 3, Step 6, and Test 4, Step 7.
+- **[T1, Step 4]** is another way of writing **T1 §4**. Open the report link above, then find that step heading.
+
+**Confirmed/observed** means the specific stated finding was supported. **Code confirmed** means a capability was found in code, not necessarily seen running. **Not observed/not found/clean for a named check** means that check found no evidence within its limits; it does not prove the whole program safe. **Unresolved/requires investigation** means there is not enough evidence to decide. **Suspicious** or a **High/Medium/Low** risk rating describes concern, not proof of malware.
+
+Labels such as **REMOTE-IP-01** replace withheld details for privacy. **T+00:01:00** means one minute after that document’s reference point; it is not a wall-clock time and should not be matched across reports. Raw logs named in the text are not included publicly; see [evidence availability](../docs/EVIDENCE.md).
+
 ## 1. Executive Summary
 
 The evidence supports **riskware**, with no conclusive malware or trojan verdict and no cryptocurrency mining observed during the tested run. The most significant findings are **default-enabled plaintext Steam depot-key sharing in LuaTools.dll**, **unsigned Steam-resident proxies/OpenSteamTool with reproducible Steam-triggered LuaTools auto-launch**, and **multiple component update sources with incomplete independent provenance assurance**. The packing/RWX checks were clean for their tested indicators, and the bounded mining test found neither sustained mining-like resource use nor requested mining-port traffic. Browser credential theft remains unresolved because file reads and encrypted network payloads were not traced. Local CEF debugging exposure and an unattributed 64 KB private executable region add security concerns, but neither establishes a hidden malicious payload. The live cloud-hook path was inactive and the installed GUI was 1.3.3, so these results do not establish all behavior of every component or of the original 1.3.2 installer alone. [T1, Steps 3–4, 7; T2, Steps 1–8; T3, Steps 6–10; T4, Steps 5, 10–11]

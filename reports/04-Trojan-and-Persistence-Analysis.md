@@ -1,5 +1,9 @@
 # LuaTools persistence, injection, and memory investigation
 
+## How to read this report
+
+Read each finding together with its limitations. For **T1–T4**, **§/§§**, source references and finding labels, use the [short reading guide](05-Master-Security-Investigation-Report.md#how-to-read-this-report). “Not observed” is not a guarantee of safety.
+
 > **Public, redacted edition.** Local paths, host-specific identifiers, exact session/file times, network addresses and incidental environment details have been replaced or withheld. Relative time labels are local to this document. This is not an original forensic artifact. Supporting raw artifacts named below are **not included**; see [evidence availability](../docs/EVIDENCE.md) and [redaction policy](../docs/REDACTIONS.md). Claims retain their original limits.
 
 [Repository overview](../README.md) · [Master report](05-Master-Security-Investigation-Report.md)
