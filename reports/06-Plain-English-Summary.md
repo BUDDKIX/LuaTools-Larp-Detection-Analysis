@@ -19,9 +19,11 @@ The master report calls it **riskware**: software whose features or behavior cre
 
 ## Who did the work?
 
-The video creator directed the investigation. The AI assistant called **Astra** in the video performed the code inspection and automated tests through Codex. The creator did not personally reverse engineer the program’s binaries.
+I did the analysis using **ChatGPT Codex with the GPT-6 Astra model**, with **medium-to-high reasoning effort** and **full access to my PC**. I directed the investigation and used the assistant to perform code inspection and automated tests.
 
-The work examined parts of the program’s code and file structure, then watched selected behavior while it ran. It was not a complete professional reverse-engineering audit or a reconstruction of every function using tools such as Ghidra or IDA. The underlying AI model/version was not independently established in the collection records.
+This is my account of the setup I used; the collection records do not independently verify the model or reasoning settings. Full access refers to Codex’s access permissions, not Windows administrator privileges: the recorded tests ran without elevation, and some tracing was unavailable.
+
+The work examined parts of the program’s code and file structure, then watched selected behavior while it ran. It was not a complete professional reverse-engineering audit or a reconstruction of every function using tools such as Ghidra or IDA.
 
 ## What was actually found?
 
@@ -85,7 +87,7 @@ Encrypted network messages were not opened and examined. Whole-computer upload t
 
 [Full limitations: master report, section 7](05-Master-Security-Investigation-Report.md#7-testing-limitations)
 
-## How is this useful to an ordinary viewer?
+## How is this useful to an ordinary reader?
 
 It separates what was actually found from rumors and assumptions. It gives you specific concerns to consider: default key sharing, code running inside Steam, automatic launching, local debugging access and trust in updates. It also shows exactly where the investigation could not reach a conclusion.
 

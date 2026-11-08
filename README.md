@@ -1,12 +1,14 @@
 # Is LuaTools a virus? A bounded security investigation
 
-Companion repository for **“I reverse engineered LuaTools to see if it’s a virus.”**
+Public reports investigating claims that LuaTools might be a GPU/CPU miner, malware, a virus, or a trojan.
 
-## About the video and who did the analysis
+## Who did the analysis?
 
-I made this video to investigate claims that LuaTools might be a GPU/CPU miner, malware, a virus, or a trojan. **I directed the investigation; I did not personally reverse engineer the binaries.** The AI assistant I refer to as **Astra** in the video performed the code inspection and automated tests through the Codex desktop environment.
+I did the analysis using **ChatGPT Codex with the GPT-6 Astra model**, with **medium-to-high reasoning effort** and **full access to my PC**. I directed the investigation and used the assistant to perform code inspection and automated tests.
 
-Here, “reverse engineered” refers to examining executable structure, strings, imports/exports and managed .NET IL, alongside live behavior. **This is not equivalent to an exhaustive professional reverse-engineering engagement using tools such as Ghidra or IDA and deeper manual investigation.** Tool choice alone also does not guarantee completeness. The reports document the particular evidence obtained, not a definitive answer to every possible behavior.
+This is my account of the setup I used; the collection records do not independently verify the model or reasoning settings. Full access refers to Codex’s access permissions, not Windows administrator privileges: the recorded tests ran without elevation, and some tracing was unavailable.
+
+The analysis examined executable structure, strings, imports/exports and managed .NET IL, alongside live behavior. **This is not equivalent to an exhaustive professional reverse-engineering engagement using tools such as Ghidra or IDA and deeper manual investigation.** Tool choice alone also does not guarantee completeness. The reports document the particular evidence obtained, not a definitive answer to every possible behavior.
 
 The purpose is to test those community claims honestly: what supports them, what was not observed, and what remains unknown. This project does not claim to have proven LuaTools safe—or proven a hidden malicious payload.
 
@@ -30,7 +32,7 @@ This repository explains the evidence behind that assessment, including negative
 
 - **New to security analysis?** Start with the [plain-English summary](reports/06-Plain-English-Summary.md).
 - **Want the conclusion and its limits?** Read the [master report](reports/05-Master-Security-Investigation-Report.md).
-- **Checking the video’s claims?** Use the [claim-to-evidence guide](docs/CLAIMS.md).
+- **Checking the conclusions?** Use the [claim-to-evidence guide](docs/CLAIMS.md).
 - **Want the individual investigations?** Choose a report below.
 - **Considering keeping or removing the tool?** See the [risk-reduction and removal guide](docs/REMOVAL.md).
 - **Want to reproduce or challenge a result?** Read [methodology](docs/METHODOLOGY.md), [evidence availability](docs/EVIDENCE.md), and [contribution guidance](CONTRIBUTING.md).
@@ -44,11 +46,11 @@ This repository explains the evidence behind that assessment, including negative
 | [05 — Master report](reports/05-Master-Security-Investigation-Report.md) | What do the results mean together? | Riskware, with specific confirmed concerns and material testing gaps |
 | [06 — Plain-English summary](reports/06-Plain-English-Summary.md) | What does this mean without the technical detail? | An accessible explanation of the master report, with the same uncertainties |
 
-## What “reverse engineered” means in this project
+## What the analysis covered
 
 The work included PE/import/export analysis, string inspection, installer and .NET bundle extraction, and inspection of managed intermediate language (IL). It also included live process/module, resource, network, filesystem and memory-region observations.
 
-**It did not include complete native-code disassembly, an exhaustive source audit, TLS decryption or attribution of every private executable allocation.** The video title is not a claim that every function in every DLL was reconstructed. The work was performed through a Codex desktop agent using local tools. “Astra” is the creator’s name for the assistant in the video; the collection records do not independently establish its underlying model/version. No computer-use skill is claimed to have been used for these tests. These are AI-assisted results, not an independent laboratory certification.
+**It did not include complete native-code disassembly, an exhaustive source audit, TLS decryption or attribution of every private executable allocation.** Not every function in every DLL was reconstructed. No computer-use skill is claimed to have been used for these tests. These are AI-assisted results, not an independent laboratory certification.
 
 ## The findings that matter most
 
@@ -79,7 +81,7 @@ These are **Steam depot content-decryption keys, not demonstrated account passwo
 
 ## Why this is useful
 
-This investigation gives viewers specific behaviors to evaluate instead of a yes/no label based on antivirus reputation. It identifies which file contains a risky code path, which modules were actually loaded, which observations were negative, and which questions still need stronger instrumentation. The [hash inventory](docs/SOFTWARE-HASHES.md) lets researchers check whether they are examining the same bytes; matching hashes do not prove safety.
+This investigation gives readers specific behaviors to evaluate instead of a yes/no label based on antivirus reputation. It identifies which file contains a risky code path, which modules were actually loaded, which observations were negative, and which questions still need stronger instrumentation. The [hash inventory](docs/SOFTWARE-HASHES.md) lets researchers check whether they are examining the same bytes; matching hashes do not prove safety.
 
 The results also provide focused follow-up questions: trace native credential-file reads, identify the private executable region, examine update authenticity, and test optional cloud behavior in an isolated environment. Findings apply to the tested builds and conditions, not every past or future LuaTools release.
 
@@ -91,7 +93,7 @@ The non-elevated context blocked some tracing, but **read-only Steam memory quer
 
 ## Privacy and evidence transparency
 
-Only redacted publication copies are included. Computer/user identifiers, personal paths, raw connection addresses, exact local times, credential-profile metadata and incidental app details are withheld or pseudonymized. Software hashes, versions, test durations and material results are retained. Loopback and well-known public resolver addresses are generic protocol context, not the creator’s address.
+Only redacted publication copies are included. Computer/user identifiers, personal paths, raw connection addresses, exact local times, credential-profile metadata and incidental app details are withheld or pseudonymized. Software hashes, versions, test durations and material results are retained. Loopback and well-known public resolver addresses are generic protocol context, not the analyst’s address.
 
 References inside reports to JSON, logs, IL listings or scripts describe private source artifacts; those are **not available in this repository**. Readers can inspect the published reasoning but cannot independently reproduce every original measurement from this package alone. See [what is included and withheld](docs/EVIDENCE.md) and [the redaction policy](docs/REDACTIONS.md).
 

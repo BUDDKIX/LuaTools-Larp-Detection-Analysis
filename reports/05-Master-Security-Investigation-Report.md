@@ -9,9 +9,13 @@
 
 **Target:** LuaTools 1.3.2 — Steam modification tool; the supplied installer was 1.3.2, but the installed GUI actually tested was **1.3.3**. Plugin record: v2.2; CloudRedirect GUI: 2.6.6.0.
 
-**Tested by:** Codex desktop agent using local PowerShell, Python/pefile, .NET metadata reader, Windows counters/API queries, and primary-source documentation.
+**Analysis attribution (analyst-provided):** I did the analysis using **ChatGPT Codex with the GPT-6 Astra model**, with **medium-to-high reasoning effort** and **full access to my PC**.
 
-**Test machine:** Windows; exact edition/version and OS build were **not recorded** in the source reports. AMD64 target processes/binaries and integrated graphics graphics were recorded; user context was medium-integrity/non-elevated. **Antivirus installation/enabled status was not established.** The Windows DLL file version [PRIVATE-IP-REDACTED] is not asserted to be the machine’s OS build.
+This is my account of the setup I used; the collection records do not independently verify the model or reasoning settings. Full access refers to Codex’s access permissions, not Windows administrator privileges: the recorded tests ran without elevation, and some tracing was unavailable.
+
+**Collection tools:** Codex desktop agent using local PowerShell, Python/pefile, .NET metadata reader, Windows counters/API queries, and primary-source documentation.
+
+**Test machine:** Windows; exact edition/version and OS build were **not recorded** in the source reports. AMD64 target processes/binaries and integrated graphics were recorded; user context was medium-integrity/non-elevated. **Antivirus installation/enabled status was not established.** The Windows DLL file version [PRIVATE-IP-REDACTED] is not asserted to be the machine’s OS build.
 
 **Scope:** Static binary analysis and live behavioral analysis across four categories, 38 numbered steps plus baseline/subchecks (40+ checks). Some checks were inconclusive or unavailable. Original observations: **6 November 2026**; this compilation performs no retest.
 

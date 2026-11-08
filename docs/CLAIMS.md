@@ -2,7 +2,7 @@
 
 [Overview](../README.md)
 
-| Suitable wording for the video | Source | Avoid saying |
+| Evidence-supported wording | Source | Avoid saying |
 |---|---|---|
 | “We inspected managed IL and tested observable behavior.” | T1 §4; T2–T4 | “We fully reconstructed every native DLL.” |
 | “No mining was observed in this ten-minute run.” | T2 §§1–8 | “Mining is refuted” or “it cannot be a miner.” |

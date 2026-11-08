@@ -2,7 +2,7 @@
 
 [Overview](../README.md)
 
-These identify the analyzed software bytes; they are not signatures of safety or the creator’s personal identifiers. Installer 1.3.2 and installed GUI 1.3.3 differ.
+These identify the analyzed software bytes; they are not signatures of safety or the analyst’s personal identifiers. Installer 1.3.2 and installed GUI 1.3.3 differ.
 
 | File | SHA-256 |
 |---|---|
