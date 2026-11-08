@@ -24,10 +24,11 @@ This repository explains the evidence behind that assessment, including negative
 | Environment | Live Windows desktop; AMD64 target processes; non-elevated user; integrated graphics |
 | Exact OS build / antivirus / Steam account mode | Not established in the source reports |
 | Analysis | AI-assisted PowerShell/Python/.NET metadata inspection and Windows API/counter measurements |
-| Public evidence | Five redacted reports and a software-hash inventory; no raw forensic logs or binaries |
+| Public evidence | Five redacted reports, a plain-English summary and a software-hash inventory; no raw forensic logs or binaries |
 
 ## Start here
 
+- **New to security analysis?** Start with the [plain-English summary](reports/06-Plain-English-Summary.md).
 - **Want the conclusion and its limits?** Read the [master report](reports/05-Master-Security-Investigation-Report.md).
 - **Checking the video’s claims?** Use the [claim-to-evidence guide](docs/CLAIMS.md).
 - **Want the individual investigations?** Choose a report below.
@@ -41,6 +42,7 @@ This repository explains the evidence behind that assessment, including negative
 | [03 — Credentials and networking](reports/03-Credential-Theft-and-Network-Analysis.md) | What data access/network activity could be established? | Explainable sampled connections; credential reads and encrypted payloads unresolved |
 | [04 — Persistence and injection](reports/04-Trojan-and-Persistence-Analysis.md) | How does it load, persist and expose features? | Steam-triggered auto-launch and local modules confirmed; a trojan not established |
 | [05 — Master report](reports/05-Master-Security-Investigation-Report.md) | What do the results mean together? | Riskware, with specific confirmed concerns and material testing gaps |
+| [06 — Plain-English summary](reports/06-Plain-English-Summary.md) | What does this mean without the technical detail? | An accessible explanation of the master report, with the same uncertainties |
 
 ## What “reverse engineered” means in this project
 

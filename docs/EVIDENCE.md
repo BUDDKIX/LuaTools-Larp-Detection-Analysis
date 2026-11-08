@@ -5,6 +5,7 @@
 ## Included
 
 - Five redacted report copies, with step references and retained measured results.
+- A plain-English summary of the master report; this adds no new tests or evidence.
 - Software SHA-256 identifiers, copied from the original inventory.
 - Scope, limitation, redaction and correction guidance.
 - `PUBLIC-FILES.sha256`, which identifies the public files in this release. It is an integrity manifest, not a signature or safety endorsement.

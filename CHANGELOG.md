@@ -1,5 +1,11 @@
 # Publication changes
 
+## Plain-English summary — 8 November 2026
+
+- Added an accessible explanation of the master report, preserving its findings and uncertainties.
+- Linked the summary from the README and documented it in the evidence inventory.
+- No additional security tests were performed.
+
 ## Public edition — 8 November 2026
 
 - Corrected categorical “not a miner/trojan” claims to bounded observations.
