@@ -1,6 +1,28 @@
-# Is LuaTools a virus? A bounded security investigation
+# LuaTools Larp Detection Analysis
 
-Public reports investigating claims that LuaTools might be a GPU/CPU miner, malware, a virus, or a trojan.
+**Checking the claims behind the comments: GPU miner, virus, trojan—or something the evidence does not establish?**
+
+## Why this investigation exists
+
+I undertook this analysis after comments on [OneShed’s LuaTools videos](https://www.youtube.com/@OneShed) accused the software of being a GPU miner or virus, blamed it for computer crashes, and criticized OneShed for introducing it. That is my account of what prompted the investigation; this repository does not archive or independently authenticate those comments.
+
+The aim was to challenge unsupported claims with evidence and debunk them where the tests justified doing so. **“Larp detection” is the informal theme for examining confident claims that go beyond the evidence.** It is not a technical malware classification or a finding that individual commenters lied. People can report genuine problems without knowing their cause.
+
+The reports follow the evidence, including findings that raise concerns about LuaTools. Supporting OneShed does not require calling the software safe, and criticism alone does not establish that it is malware.
+
+## What the claims look like against the evidence
+
+These are paraphrased claim categories, not quotations from identified commenters.
+
+| Claim being examined | What this investigation supports |
+|---|---|
+| “It is a GPU/CPU miner.” | No mining evidence was observed during the approximately ten-minute run. Delayed, conditional or evasive mining was not ruled out. |
+| “It is a virus or trojan.” | A hidden malicious payload or trojan was not established. The reports identify specific security concerns and assess the software as riskware. |
+| “It steals passwords.” | Credential theft remains unresolved: reliable file-read tracing and inspection of encrypted messages were unavailable. |
+| “It crashed or damaged my PC.” | This investigation did not examine commenters’ computers, crash dumps or hardware failures. It cannot confirm or disprove their individual experiences or attribute their cause. |
+| “These results prove it is safe to install.” | They do not. The findings apply to the tested files and conditions, with substantial limitations. |
+
+**The supported rebuttal is that these tests did not substantiate the mining claim or establish a virus/trojan verdict. That is narrower than proving every allegation false.** Read the [plain-English summary](reports/06-Plain-English-Summary.md) or the [master report](reports/05-Master-Security-Investigation-Report.md) for the evidence and unanswered questions.
 
 ## Who did the analysis?
 
@@ -11,8 +33,6 @@ I did the analysis using **ChatGPT Codex with the GPT-6 Astra model**, with **me
 This is my account of the setup I used; the collection records do not independently verify the model or reasoning settings. Full access refers to Codex’s access permissions, not Windows administrator privileges: the recorded tests ran without elevation, and some tracing was unavailable.
 
 The analysis examined executable structure, strings, imports/exports and managed .NET IL, alongside live behavior. **This is not equivalent to an exhaustive professional reverse-engineering engagement using tools such as Ghidra or IDA and deeper manual investigation.** Tool choice alone also does not guarantee completeness. The reports document the particular evidence obtained, not a definitive answer to every possible behavior.
-
-The purpose is to test those community claims honestly: what supports them, what was not observed, and what remains unknown. This project does not claim to have proven LuaTools safe—or proven a hidden malicious payload.
 
 **Assessment: riskware with confirmed security concerns. No cryptocurrency mining was observed during the bounded test. Credential theft remains unresolved; a trojan was not established.**
 
