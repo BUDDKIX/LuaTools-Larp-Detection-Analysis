@@ -4,7 +4,7 @@
 
 ## Why this investigation exists
 
-I undertook this analysis after comments on [OneShed’s LuaTools videos](https://www.youtube.com/@OneShed) accused the software of being a GPU miner or virus, blamed it for computer crashes, and criticized OneShed for introducing it. That is my account of what prompted the investigation; this repository does not archive or independently authenticate those comments.
+I undertook this analysis after comments on [OneShed](https://www.youtube.com/@OneShed)’s LuaTools videos accused the software of being a GPU miner or virus, blamed it for computer crashes, and criticized OneShed for introducing it. That is my account of what prompted the investigation; this repository does not archive or independently authenticate those comments.
 
 The aim was to challenge unsupported claims with evidence and debunk them where the tests justified doing so. **“Larp detection” is the informal theme for examining confident claims that go beyond the evidence.** It is not a technical malware classification or a finding that individual commenters lied. People can report genuine problems without knowing their cause.
 
@@ -26,7 +26,7 @@ These are paraphrased claim categories, not quotations from identified commenter
 
 ## Who did the analysis?
 
-I performed this analysis for one of [OneShed’s video essays](https://www.youtube.com/@OneShed).
+I performed this analysis for one of [OneShed](https://www.youtube.com/@OneShed)’s video essays.
 
 I did the analysis using **ChatGPT Codex with the GPT-6 Astra model**, with **medium-to-high reasoning effort** and **full access to my PC**. I directed the investigation and used the assistant to perform code inspection and automated tests.
 

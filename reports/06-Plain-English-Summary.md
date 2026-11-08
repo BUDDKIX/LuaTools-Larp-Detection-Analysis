@@ -23,7 +23,7 @@ The master report calls it **riskware**: software whose features or behavior cre
 
 ## Who did the work?
 
-I performed this analysis for one of [OneShed’s video essays](https://www.youtube.com/@OneShed).
+I performed this analysis for one of [OneShed](https://www.youtube.com/@OneShed)’s video essays.
 
 I did the analysis using **ChatGPT Codex with the GPT-6 Astra model**, with **medium-to-high reasoning effort** and **full access to my PC**. I directed the investigation and used the assistant to perform code inspection and automated tests.
 
