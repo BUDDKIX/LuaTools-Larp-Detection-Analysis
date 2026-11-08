@@ -1,5 +1,9 @@
 # Publication changes
 
+## OneShed credit — 8 November 2026
+
+- Credited the analysis as work performed for one of OneShed’s video essays, with a channel link in the README, master report and plain-English summary.
+
 ## Reading guide — 8 November 2026
 
 - Added explanations of report references, section symbols, ranges, finding labels and privacy placeholders.

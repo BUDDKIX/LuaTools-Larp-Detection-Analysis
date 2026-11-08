@@ -9,6 +9,8 @@
 
 **Target:** LuaTools 1.3.2 — Steam modification tool; the supplied installer was 1.3.2, but the installed GUI actually tested was **1.3.3**. Plugin record: v2.2; CloudRedirect GUI: 2.6.6.0.
 
+I performed this analysis for one of [OneShed’s video essays](https://www.youtube.com/@OneShed).
+
 **Analysis attribution (analyst-provided):** I did the analysis using **ChatGPT Codex with the GPT-6 Astra model**, with **medium-to-high reasoning effort** and **full access to my PC**.
 
 This is my account of the setup I used; the collection records do not independently verify the model or reasoning settings. Full access refers to Codex’s access permissions, not Windows administrator privileges: the recorded tests ran without elevation, and some tracing was unavailable.

@@ -23,6 +23,8 @@ The master report calls it **riskware**: software whose features or behavior cre
 
 ## Who did the work?
 
+I performed this analysis for one of [OneShed’s video essays](https://www.youtube.com/@OneShed).
+
 I did the analysis using **ChatGPT Codex with the GPT-6 Astra model**, with **medium-to-high reasoning effort** and **full access to my PC**. I directed the investigation and used the assistant to perform code inspection and automated tests.
 
 This is my account of the setup I used; the collection records do not independently verify the model or reasoning settings. Full access refers to Codex’s access permissions, not Windows administrator privileges: the recorded tests ran without elevation, and some tracing was unavailable.
